@@ -1,0 +1,61 @@
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
+}
+
+.nav-open {
+  & .nav {
+    transform: translateX(0);
+  }
+
+  & .nav-toggle {
+    position: fixed;
+  }
+
+  & .hamburger {
+    transform: rotate(0.625turn);
+
+    &::before {
+      transform: rotate(90deg) translateX(-6px);
+    }
+
+    &::after {
+      opacity: 0;
+    }
+  }
+}
+.hamburger {
+  display: block;
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    background: var(--color-accent);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  &::before {
+    top: 6px;
+  }
+  &::after {
+    bottom: 6px;
+  }
+}

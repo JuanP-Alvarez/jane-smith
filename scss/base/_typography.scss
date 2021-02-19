@@ -1,0 +1,65 @@
+body {
+  color: var(--color-dark);
+  font-family: var(--font-primary);
+  font-size: var(--font-s-body);
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: var(--font-w-bold);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-s-h1);
+}
+h2 {
+  font-size: var(--font-s-h2);
+}
+h3 {
+  font-size: var(--font-s-h3);
+}
+
+// mio p
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: var(--font-w-regular);
+
+  & strong {
+    // Hacemos un salto de linea que siempre será en el mismo lugar (lo que esta dentro del tag strong sera una linea nueva)
+    display: block;
+  }
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--font-s-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--color-accent);
+  padding: 0.25em 1em;
+  font-family: var(--font-secondary);
+  margin-bottom: 1em;
+}
+
+.section__subtitle--work {
+  color: var(--color-accent);
+  font-weight: var(--font-w-bold);
+  margin-bottom: 2em;
+}

@@ -1,0 +1,49 @@
+.my-services {
+  // background-color: var(--color-dark);
+  background-image: linear-gradient(
+      rgba(48, 48, 48, 0.75),
+      rgba(48, 48, 48, 0.75)
+    ),
+    url(../../img/services-bg.jpg);
+  background-size: cover;
+  // background-blend-mode: multiply;
+  color: var(--color-light);
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--color-accent);
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1em;
+    height: 2px;
+    margin: 0.5em auto 1em;
+    background: var(--color-light);
+    opacity: 0.25;
+  }
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+.service {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+@include breakpoint(custom1) {
+  .services {
+    display: flex;
+    max-width: 100rem; // magic number, it's a guess
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service + .service {
+    margin-left: 2em;
+  }
+}

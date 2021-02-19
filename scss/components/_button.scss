@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: var(--color-accent);
+  color: var(--color-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--font-w-bold);
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

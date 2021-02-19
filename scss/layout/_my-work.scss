@@ -1,0 +1,36 @@
+.my-work {
+  background: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  // max-width: 100rem;
+
+  &__item {
+    background: var(--color-accent);
+    overflow: hidden;
+    &:focus {
+      position: relative;
+      z-index: 2;
+      .portfolio__img {
+        transform: scale(1.2);
+        opacity: 0.85;
+      }
+    }
+  }
+
+  &__img {
+    // margin: 0 auto; // mio
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+      opacity 250ms linear;
+
+    &:hover,
+    .portfolio__item:focus .portfolio__img {
+      transform: scale(1.2);
+      opacity: 0.85;
+    }
+  }
+}

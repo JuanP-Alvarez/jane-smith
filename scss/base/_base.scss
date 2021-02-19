@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--color-light);
+}
+
+section {
+  // padding: 9rem 3.6rem;
+  padding: 5em 2em;
+}
+
+img {
+  display: block; // Solucionamos problemas ya que por defecto el display es inline
+  max-width: 100%; // Solucionamos problemas de tamaño y overflow
+}
+
+:focus {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
