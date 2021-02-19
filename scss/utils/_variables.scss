@@ -5,9 +5,13 @@
   --font-w-regular: 300;
   --font-w-bold: 900;
 
-  --color-light: #fff;
-  --color-dark: #303030;
-  --color-accent: #16e0bd;
+  // --color-light: #fff;
+  // --color-dark: #303030;
+  // --color-accent: #16e0bd;
+
+  // --color-light: #303030;
+  // --color-dark: #fff;
+  // --color-accent: #800d22;
 
   --font-s-h1: 4.8rem;
   --font-s-h2: 3.6rem;
@@ -16,6 +20,19 @@
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+html {
+  --color-light: #fff;
+  --color-dark: #303030;
+  --color-darkest: #222222;
+  --color-accent: #16e0bd;
+}
+
+html[data-theme='dark'] {
+  --color-light: #303030;
+  --color-dark: #fff;
+  --color-accent: #d51538;
 }
 
 @include breakpoint(custom1) {

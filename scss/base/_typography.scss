@@ -58,8 +58,19 @@ p {
   margin-bottom: 1em;
 }
 
+.section__title--services {
+  color: var(--color-accent);
+}
+
+.section__title--work {
+  color: var(--color-accent);
+}
 .section__subtitle--work {
   color: var(--color-accent);
   font-weight: var(--font-w-bold);
   margin-bottom: 2em;
+}
+
+.section__subtitle--work {
+  color: var(--color-dark);
 }

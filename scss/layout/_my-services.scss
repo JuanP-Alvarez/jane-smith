@@ -12,7 +12,6 @@
 }
 
 .section__title--services {
-  color: var(--color-accent);
   position: relative;
 
   &::after {
@@ -33,6 +32,7 @@
 .service {
   max-width: 50rem;
   margin: 0 auto;
+  color: #fff;
 }
 
 @include breakpoint(custom1) {
